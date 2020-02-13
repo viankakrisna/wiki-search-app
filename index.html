@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki Search App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <form id="wiki-form">
+      <fieldset id="wiki-form-fieldset">
+        <label for="wiki-query">
+          Article Title
+        </label>
+        <input type="text" id="wiki-query" name="query" />
+        <label for="language">
+          Language
+        </label>
+        <select id="wiki-language" name="language">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="it">Italiano</option>
+          <option value="de">Deutsch</option>
+          <option value="ru">Русский</option>
+          <option value="ja">日本語</option>
+          <option value="zh">中文</option>
+          <option value="he">עברית</option>
+          <option value="ar">العربية</option>
+        </select>
+        <button type="submit">
+          Fetch
+        </button>
+      </fieldset>
+    </form>
+    <div id="wiki-result"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>

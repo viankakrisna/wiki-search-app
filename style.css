@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+fieldset {
+  background: white;
+  border: none;
+}
+
+fieldset[disabled] {
+  opacity: 0.5;
+}
+
+select,
+input {
+  background: white;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 0;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  line-height: 2em;
+  height: 2em;
+}
+
+button {
+  background: #1976d2;
+  color: white;
+  box-sizing: border-box;
+  border-color: transparent;
+  transition: 250ms;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  line-height: 1em;
+  width: auto;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 2px;
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  font-size: 0.8em;
+}
+
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+ol li {
+  line-height: 1.5em;
+}
+
+ol li::before {
+  counter-increment: section;
+  content: counters(section, ".") " ";
+}
+
+.wiki-error {
+  background: red;
+  color: white;
+  padding: 1em;
+}
+
+#wiki-result {
+  padding: 1em;
+}
